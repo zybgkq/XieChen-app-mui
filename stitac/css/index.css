@@ -1,0 +1,172 @@
+.header{
+	width: 100%;
+	display: flex;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    top: 10px;
+    z-index: 99;
+}
+.search{
+	display: inline-block;
+	height:30px;
+	width: 80%;
+	border: 0.08rem solid #999;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.mui-slider-item img{
+	height: 135px;
+}
+.nav{
+    width: 95%;
+    padding: 0;
+    table-layout: fixed;
+    border-radius: 10px;
+    opacity: 0.88;
+    box-shadow: 2px 6px 20px #212;
+    margin: 0 auto;
+}
+.nav .mui-tab-item{
+	color: #929292;
+	display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav .mui-tab-item .mui-icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: blue;
+}
+.nav .mui-tab-item .mui-icon~.mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mui-bar-tab~.mui-content{
+    position: absolute;
+    z-index: 99;
+}
+/*行程页面*/
+.sky{
+	width: 100%;
+	height: 300px;
+	background-image: url(../image/sky.jpg);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+	font-weight: 400;
+	text-align: center;
+}
+.find{
+	text-align: center;
+	font-size: 12px;
+	color: #8a6b78;
+	line-height: 5rem
+}
+.scenery{
+	display: flex;
+	flex-direction: row;
+}
+.scenery img{
+	width: 40.33%;
+	height: 100px;
+	padding: 0 0.25rem;
+	border-radius: 10px;
+}
+/*订票*/
+.warp-book{
+	margin: 20px 5px 10px 5px;
+}
+.book{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 3px;
+	width: 100%;
+}
+.book-items{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex: 0 0 32.33%;
+    margin-right: 1px;
+    color: white;
+    background: url(../image/book2.jpg) no-repeat;
+    height: 88px; 
+    background-size: 100% 100%; 
+}
+.hotel{
+	display: flex;
+	flex-direction: column;
+	background: url(../image/book1.jpg) no-repeat;
+    height: 88px; 
+    background-size: 100% 100%; 
+}
+.hotel p {
+	text-align: center;
+	border-bottom: 1px solid white;
+	padding:11px 0;
+	width: 100%;
+    color: white;
+    margin-bottom: 0;
+}
+.book:nth-of-type(2) .book-items:nth-of-type(1){
+	background: url(../image/book4.jpg) no-repeat;
+	background-size: 100% 100%; 
+}
+.book:nth-of-type(1) .hotel{
+	background: url(../image/book.jpg) no-repeat;
+	background-size: 100% 100%; 
+}
+.book:nth-of-type(3) .hotel{
+	background: url(../image/book3.jpg) no-repeat;
+	background-size: 100% 100%; 
+}
+/*第二导航*/
+.sub-nav{
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
+}
+.sub-nav .sub-nav-item{
+	width: 100%;
+	justify-content:  flex-start;
+}
+.sub-nav .sub-nav-item .mui-tab-item{
+	flex: 0 0 23.33%;
+}
+.tips{
+	font-size: 12px;
+	color: #c4b5b8;
+}
+/*客服*/
+.service{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.service span{
+	font-size: 14px;
+	color: #c4b5b8;
+	width: 30%;
+	border-right: 1px solid #c4b5b8;
+}
+.mui-btn-primary{
+	height: 40px;
+	border-radius: 10px;
+}

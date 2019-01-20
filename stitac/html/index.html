@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<!-- 响应式布局 
+		user-scalable = no 属性能够解决 iPad 切换横屏之后触摸才能回到具体尺寸的问题。
+	-->
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../../templates/mui/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../../templates/mui/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../templates/mui/icons-extra.css"> -->
+	<script src="../../templates/jq.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab" style="z-index: 100">
+		<a class="mui-tab-item mui-active" href="#tabbar">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-chat">
+			<span class="mui-icon mui-icon-email"></span>
+			<span class="mui-tab-label">行程</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-contact">
+			<span class="mui-icon mui-icon mui-icon-camera"></span>
+			<span class="mui-tab-label">旅拍</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-map">
+			<span class="mui-icon mui-icon mui-icon-chat"></span>
+			<span class="mui-tab-label">客服</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-my">
+			<span class="mui-icon mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	<div class="mui-content" style="padding: 0;">
+		<!-- 首页 -->
+		<div id="tabbar" class="mui-control-content mui-active">
+			<div class="mui-slider">
+				<div class="header">
+					<input type="search" placeholder="搜索：目的地/酒店/航班号" class="search" style="height: 30px;width: 80%; border: 0.08rem solid #999; border-radius: 20px; background-color: #fff; font-size: 16px; text-align: left">
+				</div>
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<img src="../image/lun1.jpg">
+					</div>
+					<div class="mui-slider-item">
+						<img src="../image/lub.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<a class="mui-tab-item mui-active">
+					<span class="mui-icon mui-icon-map"></span>
+					<span class="mui-tab-label">攻略</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-spinner mui-spin"></span>
+					<span class="mui-tab-label">门票</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-location"></span>
+					<span class="mui-tab-label">美食林</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+					<span class="mui-tab-label">一日游</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-location"></span>
+					<span class="mui-tab-label">微领队</span>
+				</a>
+			</div>
+		    <div class="warp-book">
+		        <div class="book">
+		        	<li class="book-items">酒店</li>
+		        	<li class="book-items hotel">
+		        		<p>海外酒店</p>
+		        		<p>特价酒店</p>
+		        	</li>
+		        	<li class="book-items hotel">
+		        		<p>团购</p>
+		        		<p>民宿·客栈</p>
+		        	</li>
+		        </div>
+		        <div class="mui-col-sm-12 book">
+		        	<li class="book-items">机票</li>
+		        	<li class="book-items hotel">
+		        		<p>火车票</p>
+		        		<p>特价机票</p>
+		        	</li>
+		        	<li class="book-items hotel">
+		        		<p>汽车票·船票</p>
+		        		<p>专车·租车</p>
+		        	</li>
+		        </div>
+		        <div class="mui-col-sm-12 book">
+		        	<li class="book-items">旅游</li>
+		        	<li class="book-items hotel">
+		        		<p>门票</p>
+		        		<p>目的地攻略</p>
+		        	</li>
+		        	<li class="book-items hotel">
+		        		<p>邮轮旅行</p>
+		        		<p>定制旅行</p>
+		        	</li>
+		        </div>
+		    </div>
+		    <div class="nav sub-nav">
+				<div class="sub-nav-item">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon iconfont">&#xe605;</span>
+						<span class="mui-tab-label">自由行</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe62a;</span>
+						<span class="mui-tab-label">WiFi电话卡</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe622;</span>
+						<span class="mui-tab-label">保险·签证</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe612;</span>
+						<span class="mui-tab-label">礼品卡</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe71f;</span>
+						<span class="mui-tab-label">当地向导</span>
+					</a>
+				</div>
+				<div class="sub-nav-item left">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon iconfont">&#xe637;</span>
+						<span class="mui-tab-label">特价机票</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe622;</span>
+						<span class="mui-tab-label">换外币·签证</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe611;</span>
+						<span class="mui-tab-label">申卡·借钱</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe65a;</span>
+						<span class="mui-tab-label">加盟合作</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon iconfont">&#xe649;</span>
+						<span class="mui-tab-label">更多</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 行程 -->
+		<div id="tabbar-with-chat" class="mui-control-content">
+			<div class="title sky">
+				<h4 class="logo">登录后可查看或添加行程</h4>
+				<button type="button" class="mui-btn mui-btn-outlined">登录</button>
+			</div>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="find">- 寻找旅途灵感 -</li>
+				<li class="mui-table-view-cell"><a>下一站去哪儿</a></li>
+				<li class="mui-table-view-cell scenery">
+					<img src="../image/Scenery.jpg">
+					<img src="../image/Scenery1.jpg">
+					<img src="../image/Scenery2.jpg">
+				</li>
+				<li class="mui-table-view-cell scenery">
+					<img src="../image/Scenery.jpg">
+					<img src="../image/Scenery1.jpg">
+					<img src="../image/Scenery2.jpg">
+				</li>
+			</ul>
+		</div>
+		<!-- 旅拍 -->
+		<div id="tabbar-with-contact" class="mui-control-content">
+			<div class="title">
+				<div class="header">
+					<input type="search" placeholder="美少女小姐姐" class="search" style="height: 30px;width: 80%; border: 0.08rem solid #999; border-radius: 20px; background-color: #fff; font-size: 16px; text-align: left">
+				</div>
+			</div>
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-cell">
+					<div class="oa-contact-cell mui-table">
+						<div class="oa-contact-avatar mui-table-cell">
+							<img src="" />
+						</div>
+						<div class="oa-contact-content mui-table-cell">
+							<div class="mui-clearfix">
+								<h4 class="oa-contact-name">叶文洁</h4>
+								<span class="oa-contact-position mui-h6">董事长</span>
+							</div>
+							<p class="oa-contact-email mui-h6">
+								yewenjie@sina.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-cell">
+					<div class="oa-contact-cell mui-table">
+						<div class="oa-contact-avatar mui-table-cell">
+							<img src="" />
+						</div>
+						<div class="oa-contact-content mui-table-cell">
+							<div class="mui-clearfix">
+								<h4 class="oa-contact-name">艾AA</h4>
+								<span class="oa-contact-position mui-h6">总经理</span>
+							</div>
+							<p class="oa-contact-email mui-h6">
+								aaa@163.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-cell">
+					<div class="oa-contact-cell mui-table">
+						<div class="oa-contact-avatar mui-table-cell">
+							<img src="" />
+						</div>
+						<div class="oa-contact-content mui-table-cell">
+							<div class="mui-clearfix">
+								<h4 class="oa-contact-name">罗辑</h4>
+								<span class="oa-contact-position mui-h6">员工</span>
+							</div>
+							<p class="oa-contact-email mui-h6">
+								luoji@126.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-cell">
+					<div class="oa-contact-cell mui-table">
+						<div class="oa-contact-avatar mui-table-cell">
+							<img src="" />
+						</div>
+						<div class="oa-contact-content mui-table-cell">
+							<div class="mui-clearfix">
+								<h4 class="oa-contact-name">云天明</h4>
+								<span class="oa-contact-position mui-h6">员工</span>
+							</div>
+							<p class="oa-contact-email mui-h6">
+								ytm@163.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-cell">
+					<div class="oa-contact-cell mui-table">
+						<div class="oa-contact-avatar mui-table-cell">
+							<img src="" />
+						</div>
+						<div class="oa-contact-content mui-table-cell">
+							<div class="mui-clearfix">
+								<h4 class="oa-contact-name">史强</h4>
+								<span class="oa-contact-position mui-h6">员工</span>
+							</div>
+							<p class="oa-contact-email mui-h6">
+								shiqiang@gmail.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		</div>
+		<!-- 客服 -->
+		<div  id="tabbar-with-map" class="mui-control-content">
+		    <div class="service">
+		    	<span>登录以获得更快捷的服务</span>
+		    	<button type="button" class="mui-btn mui-btn-primary">注册</button>
+		    	<button type="button" class="mui-btn mui-btn-primary">蓝色</button>
+		    </div>
+		    <ul class="mui-table-view mui-grid-view">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../image/laud1.jpg">
+		                <div class="mui-media-body">旅行指南</div>
+		                <span class="tips">让你的旅行更轻松</span></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../image/laud3.jpg">
+		                <div class="mui-media-body">锁定飞机好座位</div>
+		            	<span class="tips">在线选座快人一步</span></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="../image/laud2.jpg">
+		                <div class="mui-media-body">航班发生延误处理</div>
+		            	<span class="tips">飞机延误退改指南</span></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../image/laud3.jpg">
+		                <div class="mui-media-body">同行驴友互助交流</div>
+		            	<span class="tips">全程实时贴心互动</span></a></li>
+		    </ul>    
+		     <div class="find">出行当地服务</div>
+		     <div class="nav">
+				<a class="mui-tab-item mui-active">
+					<span class="mui-icon iconfont">&#xe601;</span>
+					<span class="mui-tab-label">紧急支援</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon iconfont">&#xe600;</span>
+					<span class="mui-tab-label">出行清单</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon iconfont">&#xe60a;</span>
+					<span class="mui-tab-label">微领队</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon iconfont">&#xe608;</span>
+					<span class="mui-tab-label">翻译</span>
+				</a>
+			</div>
+		</div>
+		<!-- 我的 -->
+		<div id="tabbar-with-my" class="mui-control-content">
+			<div class="title"></div>
+			<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					新消息通知
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					隐私
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					通用
+				</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view" style="margin-top: 25px;">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					关于mui
+				</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view" style="margin-top: 25px;">
+			<li class="mui-table-view-cell">
+				<a style="text-align: center;color: #FF3B30;">
+					退出登录
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	</body>
+	<script src="../../templates/mui/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+
+		});
+		mui.plusReady(function(){
+		   mui('.mui-slider').slider({
+		  	    interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		    });
+		});
+		
+	</script>
+</html>
